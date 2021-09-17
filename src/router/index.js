@@ -11,17 +11,17 @@ const routes = [
   {
     path: '/products',
     name: 'Products',
-    component: () => import('../views/products/ProductList.vue')
+    component: () => import(/* webpackChunkName: "ProductList" */'../views/products/ProductList.vue')
   },
   {
     path: '/products/create',
-    name: 'Product Create',
-    component: () => import('../views/products/ProductCreate.vue')
+    name: 'ProductCreate',
+    component: () => import(/* webpackChunkName: "ProductCreate" */'../views/products/ProductCreate.vue')
   },
   {
     path: '/products/edit/:id',
     name: 'ProductEdit',
-    component: () => import('../views/products/ProductEdit.vue')
+    component: () => import(/* webpackChunkName: "ProductEdit" */'../views/products/ProductEdit.vue')
   }
 ]
 
